@@ -20,6 +20,9 @@ public class ItemsController {
     public String list(Model model) {
         List<Items> items = itemsService.findAll();
         model.addAttribute("items", items);
+        System.out.println(1);
+        System.out.println(1);
+        System.out.println(1);
         return "items";
     }
 
